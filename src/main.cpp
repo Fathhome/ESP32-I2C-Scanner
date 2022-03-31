@@ -3,7 +3,8 @@
 #include <Wire.h>
  
 void setup() {
-  Wire.begin(4,5);
+  //Wire.begin(4,5);    //(SDA, SCL)
+  Wire.begin(23,19);    //(SDA, SCL)  //for nibbler testing only
   Serial.begin(115200);
   Serial.println("\nI2C Scanner");
 }
